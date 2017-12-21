@@ -7,6 +7,7 @@ import {
   Alert,
   FlatList,
   StatusBar,
+  BackHandler,
   ToastAndroid,
   ActivityIndicator,
   TouchableHighlight,
@@ -33,6 +34,12 @@ class Home extends Component {
       .catch(error => this.showAlert('Authentication Error', error.message));
     
     this.getProducts();
+  }
+  
+  componentDidMount() {
+    BackHandler.addEventListener('hardwareBackPress', () => {
+      BackHandler.exitApp();
+    });
   }
 
   getProducts() {

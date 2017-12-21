@@ -25,7 +25,7 @@ class App extends Component {
     firebase.auth().signInAnonymously()
       .then((user) => { 
         firebase.database().ref(`cart/${user.uid}/meta`)
-          .once('value', (snapshot) => {
+          .on('value', (snapshot) => {
             const { totalItems } = snapshot.val();
             this.setState({ totalItems });
           });
