@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "932341625241",
+    "firebase_url": "https://d2-assessment.firebaseio.com",
+    "project_id": "d2-assessment",
+    "storage_bucket": "d2-assessment.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:932341625241:android:5eeebded9a00499a",
+        "android_client_info": {
+          "package_name": "com.shoppingcart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "932341625241-hd3ii2870tggtcd0qq0o83dtsq0rv988.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBztlugF10QFS8x8ClDT8ah7xUwsIzibac"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
