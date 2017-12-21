@@ -26,8 +26,10 @@ class App extends Component {
       .then((user) => { 
         firebase.database().ref(`cart/${user.uid}/meta`)
           .on('value', (snapshot) => {
-            const { totalItems } = snapshot.val();
-            this.setState({ totalItems });
+            if (snapshot.val()) {
+              const { totalItems } = snapshot.val();
+              this.setState({ totalItems });
+            }
           });
       })
       .catch(error => this.showAlert('Authentication Error', error.message));
