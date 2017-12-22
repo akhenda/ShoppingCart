@@ -92,6 +92,7 @@ class Home extends Component {
         </View>
         <View style={styles.productInfo}>
           <Text style={styles.productTitle}>{item.title}</Text>
+          <Text style={styles.productGenre}>{item.genre}</Text>
           <Text style={styles.productPrice}>{item.price}</Text>
           <TouchableHighlight style={styles.addToCart} onPress={() => this.addToCart(item)}>
             <Text style={styles.addToCartText}>Add To Cart</Text>

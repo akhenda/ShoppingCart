@@ -27,8 +27,12 @@ const styles = StyleSheet.create({
     paddingHorizontal: 10,
   },
   productTitle: {
-    fontSize: 20,
+    fontSize: 18,
     fontWeight: '700',
+  },
+  productGenre: {
+    fontSize: 12,
+    fontWeight: '400',
   },
   productPrice: {
     fontSize: 24,
